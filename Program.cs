@@ -8,12 +8,12 @@
         }
 
         //assign value from local function to variable
-        double avgMarks = getAverageMarks();
+        double avgMarks = getAverageMarks(marks);
 
         Console.WriteLine("Average Marks: " + avgMarks);
 
-        //create local function to get average of students marks
-        double getAverageMarks() {
+        //create static local function to get average of students marks
+        static double getAverageMarks(params int[] marks) {
             double sum = 0;
             double avg;
 
